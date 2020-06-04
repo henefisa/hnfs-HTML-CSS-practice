@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/0c289c735a.js"
       crossorigin="anonymous"
@@ -104,7 +106,7 @@
     <div class="container-fluid section-1">
       <div class="container">
         <div class="section-left"></div>
-        <div class="section-right title title_section-1">
+        <div class="section-right title title_section-1" data-aos="fade-left">
           <h1>PETERSON</h1>
           <h3>FRESH GALLERY</h3>
           <p>
@@ -117,7 +119,7 @@
     </div>
     <div class="container-fluid section-2">
       <div class="container">
-        <div class="section-left">
+        <div class="section-left" data-aos="fade-right">
           <div class="rectangle-box">
             <div class="rectangle"></div>
           </div>
@@ -130,7 +132,7 @@
             </h3>
           </div>
         </div>
-        <div class="section-right title title_section-2">
+        <div class="section-right title title_section-2" data-aos="fade-left">
           <h2>WELCOME</h2>
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -152,7 +154,7 @@
         </div>
         <div class="position-relative">
           <div class="title title_section-3">
-            <div class="subtitle">
+            <div class="subtitle" data-aos="fade-up">
               <h2>
                 FRESH <br />
                 GALLERY
@@ -163,7 +165,7 @@
                 injected humour.use a passage of Lorem Ipsum,
               </p>
             </div>
-            <div>
+            <div data-aos="fade-down">
               <h4>
                 PROMO <br />
                 FASHION <br />
@@ -171,7 +173,7 @@
               </h4>
             </div>
           </div>
-          <div class="section-3-image">
+          <div class="section-3-image" data-aos="zoom-in">
             <div>
               <div>
                 <img src="./images/img2_1.png" alt="..." class="img-fluid" />
@@ -203,7 +205,7 @@
     <div class="container-fluid section-4">
       <div class="container">
         <div class="section-left"></div>
-        <div class="section-right">
+        <div class="section-right" data-aos="fade-left">
           <div class="title title_section-4">
             <h3>BIOGRAPHY</h3>
             <p>
@@ -218,14 +220,14 @@
             <a href="#" class="btn btn-custom btn-custom-outline">READ MORE</a>
           </div>
         </div>
-        <h1 class="float-text">BIOGRAPHY</h1>
+        <h1 class="float-text" data-aos="zoom-in">BIOGRAPHY</h1>
       </div>
     </div>
     <div class="container-fluid section-5">
       <div class="container">
         <div class="title title_section-5">
-          <h3>Latest Style</h3>
-          <p>
+          <h3 data-aos="fade-right">Latest Style</h3>
+          <p data-aos="fade-left">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore verita After my graduation, I decided to
@@ -233,7 +235,7 @@
           </p>
         </div>
         <div class="bio">
-          <div>
+          <div data-aos="fade-right">
             <div class="section-5-image">
               <img src="./images/img4_1.png" alt="..." class="img-fluid" />
             </div>
@@ -251,7 +253,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <div class="section-5-image">
               <img src="./images/img4_1.png" alt="..." class="img-fluid" />
             </div>
@@ -274,11 +276,11 @@
     </div>
     <div class="container-fluid section-6">
       <div class="container">
-        <div class="title title_section-6">
+        <div class="title title_section-6" data-aos="fade-right">
           <h4>Some Of Our Clients</h4>
           <div class="rect"></div>
         </div>
-        <div class="clients">
+        <div class="clients" data-aos="zoom-in">
           <div>
             <img src="./images/brand1.png" alt="..." class="img-fluid" />
           </div>
@@ -299,10 +301,10 @@
     </div>
     <div class="container-fluid section-7">
       <div class="container">
-        <div class="title title_section-7">
+        <div class="title title_section-7" data-aos="fade-right">
           <h4>Featured News</h4>
         </div>
-        <div class="news">
+        <div class="news" data-aos="fade-left">
           <div>
             <div class="image-wrapper">
               <img src="./images/img5.png" alt="..." class="img-fluid" />
@@ -347,7 +349,7 @@
     </div>
     <div class="container-fluid section-8">
       <div class="container">
-        <div class="section-left title">
+        <div class="section-left title" data-aos="fade-right">
           <h3>Contact Infomation<span class="dot"></span></h3>
           <div class="rect"></div>
           <p class="pink">You can find me here:</p>
@@ -367,7 +369,7 @@
           <p class="pink">NelsonFashion@demolink.org</p>
         </div>
 
-        <div class="section-right title">
+        <div class="section-right title" data-aos="fade-left">
           <h3>Get In Touch<span class="dot"></span></h3>
           <div class="rect"></div>
           <div class="form-wrapper">
@@ -387,5 +389,8 @@
         </div>
       </div>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
