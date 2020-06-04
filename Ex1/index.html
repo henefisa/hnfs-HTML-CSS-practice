@@ -11,6 +11,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="responsive.css" />
     <script
       src="https://kit.fontawesome.com/0c289c735a.js"
       crossorigin="anonymous"
@@ -101,8 +102,9 @@
       </div>
     </div>
     <div class="container-fluid section-1">
-      <div class="container h-100">
-        <div class="title title_section-1">
+      <div class="container">
+        <div class="section-left"></div>
+        <div class="section-right title title_section-1">
           <h1>PETERSON</h1>
           <h3>FRESH GALLERY</h3>
           <p>
@@ -115,33 +117,31 @@
     </div>
     <div class="container-fluid section-2">
       <div class="container">
-        <div class="section-content">
-          <div class="content-left">
-            <div class="rectangle-box">
-              <div class="rectangle"></div>
-            </div>
-            <div class="title title_section-2">
-              <h3>
-                ACTOR <br />
-                MODEL <br />
-                SINGER <br />
-                DJ
-              </h3>
-            </div>
+        <div class="section-left">
+          <div class="rectangle-box">
+            <div class="rectangle"></div>
           </div>
-          <div class="content-right title title_section-2">
-            <h2>WELCOME</h2>
-            <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature The first line of Lorem Ipsum.
-            </p>
-            <a href="#" class="btn btn-custom">READ MORE</a>
+          <div class="title title_section-2">
+            <h3>
+              ACTOR <br />
+              MODEL <br />
+              SINGER <br />
+              DJ
+            </h3>
           </div>
+        </div>
+        <div class="section-right title title_section-2">
+          <h2>WELCOME</h2>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature The
+            first line of Lorem Ipsum.
+          </p>
+          <a href="#" class="btn btn-custom">READ MORE</a>
         </div>
       </div>
     </div>
@@ -367,11 +367,11 @@
           <p class="pink">NelsonFashion@demolink.org</p>
         </div>
 
-        <div class="section-right">
+        <div class="section-right title">
           <h3>Get In Touch<span class="dot"></span></h3>
           <div class="rect"></div>
           <div class="form-wrapper">
-            <form>
+            <form autocomplete="off">
               <div>
                 <input type="text" placeholder="Name:" name="name" />
               </div>
