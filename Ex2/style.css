@@ -13,12 +13,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body > div {
+  overflow: hidden;
+}
+
 .section-1 {
   background: linear-gradient(
     29deg,
     rgba(151, 61, 228, 1) 32%,
     rgba(93, 40, 183, 1) 100%
   );
+}
+
+.nav {
+  display: none;
 }
 
 .section-1 .nav-bar {
@@ -75,17 +83,12 @@ body {
 
 .section-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
 }
 
-.section-1 .section-content .section-left {
-  width: 59%;
-}
-.section-1 .section-content .section-right {
-  width: 39%;
-}
 .section-1 .section-content .section-left h1 {
   color: #fff;
   margin-bottom: 20px;
@@ -99,30 +102,40 @@ body {
 }
 .section-content .section-left,
 .section-content .section-right {
-  width: 49%;
+  width: 100%;
 }
 .google-play {
   margin-top: 50px;
 }
 .section-content .section-right .section-1-images {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-content .section-right {
+  margin-top: 10px;
 }
 
 .section-2 .box-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .section-2 .box-wrapper .box {
   text-align: center;
-  width: 30%;
+  width: 100%;
   box-shadow: -1px 4px 12px 3px rgba(152, 152, 152, 0.3);
   padding: 5% 0;
+  height: 296px;
+  max-width: 333px;
+  margin-top: 15px;
 }
 .section-2 {
   padding: 80px 0;
 }
 
-.section-2 .section-content .section-left h4{
+.section-2 .section-content .section-left h4 {
   font-size: 30px;
 }
 
@@ -141,7 +154,7 @@ body {
 }
 
 .title h3 {
-  font-size: min(60px, 2.5vw);
+  font-size: max(30px, 2.5vw);
 }
 .title p {
   max-width: 600px;
@@ -179,24 +192,28 @@ body {
   margin-top: 30px;
 }
 .section-3-content .section-3-box {
-  width: 32%;
+  width: 100%;
   background: #fff;
-  margin-bottom: 2%;
+  margin-bottom: 20px;
   padding: 3%;
   box-shadow: -1px 4px 12px 3px rgba(152, 152, 152, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-3-box .box-rounding {
   border: 5px solid #e0d6d6;
   border-radius: 50%;
-  height: 233px;
-  width: 233px;
-  margin: 0 auto 10px;
+  width: 200px;
+  /* margin: 0 auto 10px; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 60px;
+  box-sizing: border-box;
+  height: 200px;
 }
 .section-3-box .box-rounding h5 {
   margin-top: 10px;
@@ -205,29 +222,39 @@ body {
 .screenshot {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
 .screenshot > div {
-  width: 24%;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.screenshot > div img {
+  width: 100%;
 }
 
 .review {
   display: flex;
   justify-content: center;
-  height: 500px;
+  min-height: 500px;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .review > div {
   display: flex;
-  width: 40%;
+  width: 100%;
+  align-items: center;
+  min-height: 450px;
 }
 .review .avatar {
   position: relative;
-  top: -80px;
+  top: -100px;
   left: -15px;
   min-width: 110px;
   height: 110px;
@@ -238,7 +265,7 @@ body {
   content: "";
   display: block;
   width: 5px;
-  height: 145px;
+  height: 120px;
   background: #07dbee;
   position: absolute;
   top: 100px;
@@ -255,7 +282,7 @@ body {
   border-right: 30px solid transparent;
   border-bottom: 60px solid #07dbee;
   position: absolute;
-  top: 230px;
+  top: 210px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -285,21 +312,28 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  height: 510px;
+  min-height: 510px;
   margin-top: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
+
 .pricing .pricing-item {
-  width: 24%;
+  width: 49%;
+  margin-bottom: 20px;
   position: relative;
 }
+
 .pricing .pricing-item .pricing-item_heading {
   background: #07dbee;
   padding: 15px;
   color: #fff;
 }
+
 .pricing .pricing-item .pricing-item_heading h4 {
   line-height: 1.5;
 }
+
 .pricing .pricing-item .pricing-item_body {
   background: #fff;
   padding: 15px;
@@ -321,8 +355,8 @@ body {
   background: #832cce;
   border-radius: 0;
   color: #fff;
-  margin: 25px;
-  width: 65%;
+  margin: 20px auto;
+  width: 135px;
 }
 
 .hook {
@@ -451,7 +485,7 @@ body {
   border: none;
   background: #832cce;
   color: #fff;
-  width: 30%;
+  width: 145px;
   border-radius: 8px;
   padding: 8px;
 }
@@ -513,4 +547,7 @@ body {
 
 .btn-custom:hover {
   background: #5a09dd !important;
+}
+.carousel-indicators {
+  margin-top: 20px;
 }
