@@ -36,9 +36,49 @@
   .title p {
     font-size: 18px;
   }
+
+  .section-4 .show-off {
+    height: 450px;
+  }
+
+  .section-4 .show-off h1 {
+    font-size: 55px;
+  }
+
+  .section-4 .show-off .colors {
+    top: 70px;
+    width: 125px;
+  }
+  .section-5 .section-content {
+    justify-content: space-between;
+  }
+  .section-5 .section-content .section-left {
+    width: 42%;
+  }
+  .section-5 .section-content .section-right {
+    width: 52%;
+  }
+
+  .section-5 .section-content .section-right .email-box {
+    width: 100%;
+    max-width: 450px;
+    float: right;
+  }
+
+  .section-6 .footer > div {
+    width: 50%;
+  }
+
+  .section-6 .footer > div .enformation {
+    margin-left: -42px;
+  }
+
+  .section-6 .footer .social {
+    margin-left: -42px;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .section-1 {
     height: 650px;
   }
@@ -50,6 +90,41 @@
   }
   .section-3 .sponsor > div {
     width: 33%;
+  }
+
+  .section-4 .products .product {
+    justify-content: space-between;
+  }
+
+  .section-4 .products .product > div {
+    width: 30%;
+  }
+
+  .section-4 .show-off {
+    height: 600px;
+  }
+
+  .section-4 .show-off .colors {
+    top: 100px;
+    width: 175px;
+  }
+
+  .section-4 .show-off h1 {
+    font-size: 75px;
+  }
+
+  .section-4 .show-off a {
+    font-size: 22px;
+  }
+
+  .section-5 .section-content .section-right {
+    width: 42%;
+  }
+
+  .header header .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -63,5 +138,36 @@
   }
   .section-2 .collection .collection-large {
     width: 65%;
+  }
+
+  .section-4 .show-off {
+    height: 700px;
+  }
+
+  .section-4 .show-off h1 {
+    font-size: 100px;
+  }
+
+  .section-4 .show-off .colors {
+    top: 120px;
+    width: 235px;
+  }
+
+  .section-6 .footer > div {
+    width: 24%;
+  }
+
+  .header header .search-box {
+    width: 50%;
+    max-width: 600px;
+  }
+  .header header .search-box select {
+    width: 30%;
+  }
+  .header header .search-box input {
+    width: 60%;
+  }
+  .header header .search-box button {
+    width: 10%;
   }
 }
