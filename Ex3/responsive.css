@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+  .menu-bar .menu {
+    flex-direction: row;
+  }
+  .menu-bar .menu .menu-left {
+    width: 33%;
+  }
+  .menu-bar .menu .menu-right {
+    width: 67%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu-bar .menu ul {
+  }
+  .menu-bar .menu ul li {
+    min-width: unset;
+    padding: 8px 12px;
+  }
+  .section-1 {
+    height: 500px;
+  }
+
+  .section-2 .collection .collection-small {
+    width: 50%;
+  }
+  .section-2 .collection .collection-large {
+    width: 50%;
+  }
+
+  .title h3 {
+    font-size: 48px;
+  }
+  .title h4 {
+    font-size: 40px;
+  }
+  .title p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-1 {
+    height: 650px;
+  }
+  .section-2 .collection .collection-small {
+    width: 40%;
+  }
+  .section-2 .collection .collection-large {
+    width: 60%;
+  }
+  .section-3 .sponsor > div {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-1 {
+    height: 800px;
+  }
+
+  .section-2 .collection .collection-small {
+    width: 35%;
+  }
+  .section-2 .collection .collection-large {
+    width: 65%;
+  }
+}

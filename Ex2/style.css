@@ -126,7 +126,7 @@ body > div {
   text-align: center;
   width: 100%;
   box-shadow: -1px 4px 12px 3px rgba(152, 152, 152, 0.3);
-  padding: 5% 0;
+  padding: 5%;
   height: 296px;
   max-width: 333px;
   margin-top: 15px;
@@ -488,6 +488,7 @@ body > div {
   width: 145px;
   border-radius: 8px;
   padding: 8px;
+  transition: background 0.3s;
 }
 
 .section-10 {
